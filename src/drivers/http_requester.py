@@ -1,6 +1,8 @@
 import requests
+from .interfaces.http_requester import HttpRequesterInterface
 
-class HttpRequester:
+
+class HttpRequester(HttpRequesterInterface):
     def __init__(self):
         self.__url = 'https://web.archive.org/web/20121007172955/https://www.nga.gov/collection/anZ1.htm'
 

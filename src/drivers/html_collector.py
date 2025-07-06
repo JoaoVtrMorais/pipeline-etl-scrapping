@@ -1,7 +1,8 @@
 from bs4 import BeautifulSoup
+from ..drivers.interfaces.html_collector import HtmlCollectorInterface
 
 
-class HtmlCollector:
+class HtmlCollector(HtmlCollectorInterface):
 
     @classmethod
     def collect_essential_information(cls, html: str) -> list[dict[str, str]]:
