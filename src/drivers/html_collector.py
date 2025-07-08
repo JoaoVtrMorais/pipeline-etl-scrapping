@@ -15,9 +15,6 @@ class HtmlCollector(HtmlCollectorInterface):
         for artist_name in artist_name_list_items:
             names = artist_name.contents[0]
 
-            if 'next' in names:
-                continue
-
             links = 'https://web.archive.org' + artist_name.get('href')
             essential_information.append({
                 "name": names,
