@@ -3,4 +3,4 @@ class TransformError(Exception):
     def __init__(self, message: str):
         super().__init__(message)
         self.message = message
-        self.error_type = 'TransformError'
+        self.error_type = 'Transform Error'
